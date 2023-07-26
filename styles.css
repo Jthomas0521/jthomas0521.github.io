@@ -1,0 +1,174 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    /* Your navigation styles go here */
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        li {
+            margin-right: 20px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Projects section styles */
+#projects {
+    /* Your projects section styles go here */
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .project-card {
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+    }
+}
+
+/* About Me section styles */
+#about {
+    /* Your about section styles go here */
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* Contact section styles */
+#contact {
+    /* Your contact section styles go here */
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Green Lantern Icon */
+.green-lantern-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+*/ Green Color Scheme */
+body {
+    background-color: #001d22;
+    color: #fff;
+}
+
+#main-nav {
+    background-color: #001d22;
+}
+
+#main-nav ul li a {
+    color: #00ff00;
+}
+
+/* Glowing Hover Effect */
+@keyframes glowing{
+    0% {
+        box-shadow: 0 0 10px #00ff00;
+    }
+    50% {
+        box-shadow: 0 0 30px #00ff00;
+    }
+    100% {
+        box-shadow: 0 0 10px #00ff00;
+    }
+}
+
+#main-nav ul li a:hover {
+    animation: glowing 1.5 infinite;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+/* Media Query for Mobile Menu Toggle */
+@media screen and (max-width: 768px) {
+    .green-lantern-toggle {
+        display: block;
+    }
+
+    #main-nav ul {
+        display: none;
+    }
+
+    #main-nav.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #001d22;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    #main-nav.active ul li {
+        margin: 15px 0;
+    }
+}
